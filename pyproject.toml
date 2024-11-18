@@ -6,7 +6,12 @@ authors = ["imnotdev25 <85677268+imnotdev25@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "=3.11.10"
+fastapi = "^0.115.5"
+pydantic-settings = "^2.6.1"
+crewai = "^0.80.0"
+crewai-tools = "^0.14.0"
+uvicorn = "^0.32.0"
 
 
 [build-system]

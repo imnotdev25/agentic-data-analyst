@@ -92,7 +92,7 @@ const AnalysisInput = () => {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-3xl font-bold mb-8">Multi-Agents Employee Salaries Analysis</h1>
+      <h1 className="text-3xl font-bold mb-8">Multi-Agents Analysis</h1>
       <div className="space-y-2">
         <label className="text-sm text-gray-600">What do you want to analyze?</label>
         <Input
