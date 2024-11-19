@@ -12,6 +12,7 @@ pydantic-settings = "^2.6.1"
 crewai = "^0.80.0"
 crewai-tools = "^0.14.0"
 uvicorn = "^0.32.0"
+langchain-openai = "^0.2.9"
 
 
 [build-system]

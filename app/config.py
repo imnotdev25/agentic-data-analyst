@@ -34,10 +34,10 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str
 
     # Azure OpenAI
-    AZURE_ENDPOINT: str = ""
+    AZURE_API_BASE: str = ""
     AZURE_API_KEY: str = ""               # "my-azure-api-key"
-    AZURE_API_BASE: str = ""                   # "https://example-endpoint.openai.azure.com"
     AZURE_API_VERSION: str = ""                 # "2023-05-15"
+    AZURE_MODEL_NAME: str = "azure/gpt4o"                 # "my-azure-model-name"
 
 
 settings = Settings()

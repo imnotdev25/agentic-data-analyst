@@ -2512,13 +2512,13 @@ langchain-core = ">=0.3.15,<0.4.0"
 
 [[package]]
 name = "langchain-openai"
-version = "0.2.8"
+version = "0.2.9"
 description = "An integration package connecting OpenAI and LangChain"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "langchain_openai-0.2.8-py3-none-any.whl", hash = "sha256:0116b104d203377d2f4f61095e1d3ce1ba50e446d1a75397eaf0d1fcdf2c0d7b"},
-    {file = "langchain_openai-0.2.8.tar.gz", hash = "sha256:48d22fa05bb8f7b371be47d05c7a3f42a68ff0e704647b86cc1bfc44e140f01b"},
+    {file = "langchain_openai-0.2.9-py3-none-any.whl", hash = "sha256:2723015e56879f9e5edfcb175fdbec6c296c1b3bf65caad28579ce9c4d1bd652"},
+    {file = "langchain_openai-0.2.9.tar.gz", hash = "sha256:38a0f2004f17cdad622d46d4dcfb92d75adbf51909dadc76d0360dd94b0d4f70"},
 ]
 
 [package.dependencies]
@@ -5925,4 +5925,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "=3.11.10"
-content-hash = "25d6b9efe8fbac07e62f7175182c16de2c528eb443e882dfde572645a374bb5f"
+content-hash = "f248b7f46b25880a08f6d22992b546116f588884e442f13b8325b7f8bbafaef7"

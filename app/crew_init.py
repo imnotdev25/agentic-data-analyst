@@ -2,7 +2,7 @@ from textwrap import dedent
 
 from crewai import Agent, Crew, Process, Task
 
-from app.llms.azure_openai import llm
+from app.llms.azure_openai import llm, azure_llm
 from app.tools.sql_tools import list_tables, tables_schema, execute_sql
 from app.models.crew_response import CrewResponse
 
@@ -19,8 +19,8 @@ sql_dev = Agent(
 
     """
     ),
-    llm=llm,
-    max_iter=2,
+    llm=azure_llm,
+    max_iter=3,
     tools=[list_tables, tables_schema, execute_sql],
     allow_delegation=False,
 )
@@ -36,8 +36,8 @@ data_analyst = Agent(
         to detail and always produce very detailed work (as long as you need).
     """
     ),
-    max_iter=2,
-    llm=llm,
+    max_iter=4,
+    llm=azure_llm,
     allow_delegation=False,
 )
 
@@ -64,8 +64,8 @@ report_writer = Agent(
         
         """
     ),
-    max_iter=2,
-    llm=llm,
+    max_iter=4,
+    llm=azure_llm,
     allow_delegation=False,
 )
 
@@ -84,7 +84,7 @@ etl_dev = Agent(
     ),
     max_iter=2,
     tools=[list_tables, tables_schema, execute_sql],
-    llm=llm,
+    llm=azure_llm,
     allow_delegation=False,
 )
 
@@ -114,7 +114,7 @@ write_report = Task(
     description=dedent(
         """
         Write an executive summary of the report from the analysis. The report
-        must be less than 100 words.
+        must be less than 250 words.
     """
     ),
     output_json=CrewResponse,
