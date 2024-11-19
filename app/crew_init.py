@@ -114,7 +114,7 @@ write_report = Task(
     description=dedent(
         """
         Write an executive summary of the report from the analysis. The report
-        must be less than 250 words.
+        must be less than 150 words.
     """
     ),
     output_json=CrewResponse,
